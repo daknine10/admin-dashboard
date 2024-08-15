@@ -42,7 +42,8 @@
 
 .main-content {
     display: grid;
-    grid-template: 1fr 1fr / 3fr 1fr;
+    grid-template: 1.5fr 1fr / 3fr 1fr;
+    padding: 6px;
 }
 
 .projects {
@@ -68,6 +69,7 @@
     border: 1px solid;
     border-radius: 10px;
     justify-content: space-evenly;
+    padding: 10px;
 }
 
 .cardcontent {
@@ -80,6 +82,7 @@
     border: 1px solid;
     grid-area: 1 / 2 / 1 / 2;
     gap: 20px;
+
 }
 
 .newscontainer {
@@ -89,7 +92,48 @@
     padding: 30px;
     border: 1px solid;
     border-radius: 10px;
-    height: 100%;
-    margin-top: 30px;
+    height: 80%;
     width: 80%;
+    align-self: center;
+    margin-top: 30px;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    gap: 20px;
+}
+
+.trendingcontainer {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 30px;
+        border: 1px solid;
+        border-radius: 10px;
+        height: 100%;
+        width: 80%;
+        margin-bottom: 30px;
+        align-self: center;
+}
+
+.newscontent {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 20px;
+}
+
+.title {
+    padding-left: 2.25vw;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.user > span {
+    display: block;
+}
+
+.user {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
 }
